@@ -89,7 +89,10 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
                   >
-                    {t("Lihat Repository", "View Repository")} ↗
+                    {p.github?.includes("figma.com")
+                    ? t("Lihat di Figma", "View on Figma")
+                    : t("Lihat Repository", "View Repository")}{" "}
+                    ↗
                   </a>
                 )}
               </div>

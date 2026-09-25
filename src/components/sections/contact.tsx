@@ -26,7 +26,7 @@ export function Contact() {
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             {t(
               "Saya memiliki pengalaman mengembangkan aplikasi full-stack, backend, dan mobile, mulai dari membangun aplikasi web menggunakan Laravel, mengembangkan REST API dengan Node.js, hingga mengembangkan aplikasi mobile menggunakan Flutter dan Firebase.",
-              "I have experience developing full-stack, backend, and mobile applications — from building web apps with Laravel, developing REST APIs with Node.js, to creating mobile apps with Flutter and Firebase."
+              "I have experience developing full-stack, backend, and mobile applications, along with IT support and software QA testing — from building web apps with Laravel, developing REST APIs with Node.js, to creating mobile apps with Flutter and Firebase."
             )}
           </p>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">

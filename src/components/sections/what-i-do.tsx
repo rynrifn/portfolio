@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Server, Globe, TestTube, Headphones } from "lucide-react";
+import { Server, Globe, TestTube, Headphones, Palette } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import { Badge } from "@/components/ui/badge";
 
@@ -23,6 +23,15 @@ const services = [
       en: "Build modern web applications focused on functionality & user experience.",
     },
     tags: ["Laravel", "MySQL", "Bootstrap", "Next.js"],
+  },
+  {
+    icon: Palette,
+    title: { id: "UI/UX Design", en: "UI/UX Design" },
+    desc: {
+      id: "Merancang antarmuka aplikasi mobile & web dengan fokus pada usability dan konsistensi visual.",
+      en: "Design mobile & web app interfaces focused on usability and visual consistency.",
+    },
+    tags: ["Figma", "Wireframing", "Prototyping", "Mobile Design"],
   },
   {
     icon: TestTube,
@@ -64,7 +73,7 @@ export function WhatIDo() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => {
             const Icon = s.icon;
             return (
